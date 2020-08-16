@@ -1,4 +1,4 @@
-#OTC Dashboard
+# OTC Dashboard
 Building OTC Desk infos by @bit2big
 
 ```bash
@@ -39,3 +39,23 @@ EOF
 ```bash
 poetry run pre-commit run --all-files
 ```
+
+```bash
+Create admin user
+python manage.py createsuperuser
+```
+
+python manage.py startapp blkeeping
+	python manage.py sqlmigrate blkeeping 0001
+
+python manage.py startapp blcontact
+	Names
+	Contacts (tel/whasapp)
+	ID Info
+	Profile Picture
+
+ python manage.py startapp blpolls
+
+ python manage.py startapp blog
+ 	python manage.py makemigrations blog
+ 	python manage.py sqlmigrate blog 0001
