@@ -1,3 +1,6 @@
+#OTC Dashboard
+Building OTC Desk infos by @bit2big
+
 ```bash
 export PROJECT_NAME=otcy
 python3 -m venv ~/.env/djenv  && source ~/.env/djenv/bin/activate
