@@ -33,7 +33,9 @@ class Trade(models.Model):
                               default='UGX')
     exchange_amount = models.CharField(max_length=20)
     exchange_percentage = models.CharField(max_length=20)
-    wallet = models.CharField(max_length=43)
+    exchange_fees = models.CharField(max_length=20)
+    wallet_source = models.CharField(max_length=20)
+    wallet_destination = models.CharField(max_length=43)
     mobilemoney_no = models.CharField(max_length=20)
     bank_details = models.CharField(max_length=200)
     tradetime = models.DateTimeField(default=timezone.now)
@@ -69,3 +71,4 @@ class Contact(models.Model):
 # detect if wallet is valid (check if excist and balance/ past transactions)
 # wallet has used before with us? For other user?
 # show balanceon own wallets (localbitcoins).
+# https://djangobook.com/mdj2-django-admin/

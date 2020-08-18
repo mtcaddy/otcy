@@ -59,3 +59,6 @@ python manage.py startapp blcontact
  python manage.py startapp blog
  	python manage.py makemigrations blog
  	python manage.py sqlmigrate blog 0001
+
+#Look@
+https://djangobook.com/mdj2-django-admin/

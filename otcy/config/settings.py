@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'blkeeping.apps.BlkeepingConfig',
-    #'blcontact.apps.BlkeepingConfig',
+    #'blcontact.apps.BlContactConfig',
 ]
 
 MIDDLEWARE = [

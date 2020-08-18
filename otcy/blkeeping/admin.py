@@ -8,13 +8,11 @@ from .models import Contact, Trade
 #	ordering = ('first_name',)
 #	search_fields = ('first_name', 'last_name', 'wallet')
 
-
 #@admin.register(Trade)
 #class TradeAdmin(admin.ModelAdmin):
-#	list_display = ('first_name', 'last_name','mobilemoney_no')
+#	list_display = ('tradetime', 'salesperson', 'exchange_amount')
 #	ordering = ('tradetime',)
-#	search_fields = ('first_name', 'last_name', 'wallet')
-
+#	search_fields = ('salesperson', 'wallet')
 
 admin.site.register(Contact)
 admin.site.register(Trade)

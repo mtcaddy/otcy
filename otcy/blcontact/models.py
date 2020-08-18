@@ -8,7 +8,7 @@ TITLE_CHOICES = [
     ('MS', 'Ms.'),
 ]
 
-class Client(models.Model):
+class Contact(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     title = models.CharField(max_length=3, choices=TITLE_CHOICES)
