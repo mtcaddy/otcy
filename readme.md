@@ -62,3 +62,7 @@ python manage.py startapp blcontact
 
 #Look@
 https://djangobook.com/mdj2-django-admin/
+https://fixer.io/ - Foreign exchange rates and currency
+https://django-money.readthedocs.io/en/stable/
+
+Django Manager - Ctrl + Shift + A: opens a menu with all Django commands.

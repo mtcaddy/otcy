@@ -37,6 +37,7 @@ class Trade(models.Model):
     wallet_source = models.CharField(max_length=20)
     wallet_destination = models.CharField(max_length=43)
     mobilemoney_no = models.CharField(max_length=20)
+    whatsapp_no = models.CharField(max_length=15)
     bank_details = models.CharField(max_length=200)
     tradetime = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
@@ -54,17 +55,17 @@ class Trade(models.Model):
         return self.title
 
 class Contact(models.Model):
-	first_name = models.CharField('First Name', max_length=120)
-	last_name = models.CharField('Last Name', max_length=120)
-	phone = models.CharField('Contact Phone', max_length=20, blank=False)
-	whatsapp = models.CharField('Whatsapp No.', max_length=20, blank=True)
-	email_address = models.EmailField('Email Address', blank=True)
-	address = models.CharField(max_length=300, blank=True)
-	city = models.CharField('City',max_length=30, blank=True)
-	zip_code = models.CharField('Zip/Post Code', max_length=12, blank=True)
-	country = models.CharField('Country',max_length=300)
-	wallet = models.CharField(max_length=43, blank=True)
-	web = models.URLField('Web Address', blank=True)
+    first_name = models.CharField('First Name', max_length=120)
+    last_name = models.CharField('Last Name', max_length=120)
+    phone = models.CharField('Contact Phone', max_length=20, blank=False)
+    whatsapp = models.CharField('Whatsapp No.', max_length=20, blank=True)
+    email_address = models.EmailField('Email Address', blank=True)
+    address = models.CharField(max_length=300, blank=True)
+    city = models.CharField('City',max_length=30, blank=True)
+    zip_code = models.CharField('Zip/Post Code', max_length=12, blank=True)
+    country = models.CharField('Country',max_length=300)
+    wallet = models.CharField(max_length=43, blank=True)
+    web = models.URLField('Web Address', blank=True)
 
 ##TODO
 # add info of own bit2big wallets
@@ -72,3 +73,4 @@ class Contact(models.Model):
 # wallet has used before with us? For other user?
 # show balanceon own wallets (localbitcoins).
 # https://djangobook.com/mdj2-django-admin/
+#
