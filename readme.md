@@ -1,5 +1,5 @@
 # OTC Dashboard
-Building OTC Desk infos by @bit2big
+Building OTC Desk and Agent Solution for Crypto by @bit2big
 
 ```bash
 export PROJECT_NAME=otcy
